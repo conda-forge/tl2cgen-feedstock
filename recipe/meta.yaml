@@ -1,5 +1,5 @@
 {% set name = "tl2cgen" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/dmlc/tl2cgen/archive/{{ version }}.tar.gz
-  sha256: 1c9439adcf588299c55ec19346ed263d1303acbb31f39d76d010dd808f387e32
+  sha256: 2640f1077099fd53d8baa2c3843e61de07dfb5361d1807c09154cef6c438eb8e
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
