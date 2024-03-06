@@ -1,5 +1,5 @@
 {% set name = "tl2cgen" %}
-{% set version = "0.3.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,11 @@ package:
 
 source:
   url: https://github.com/dmlc/tl2cgen/archive/{{ version }}.tar.gz
-  sha256: 2640f1077099fd53d8baa2c3843e61de07dfb5361d1807c09154cef6c438eb8e
+  sha256: e7e29be473b9af6c6a606d537b2f7349767a465eaa86d5ee511b5b540b54322a
 
 build:
   number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -29,13 +30,13 @@ requirements:
     - python
     - pip >=22.1
     - hatchling >=1.12.1
-    - treelite >=3.4,<4
+    - treelite >=4.1.2,<5
   run:
     - python
     - numpy
     - scipy
     - packaging
-    - treelite >=3.4,<4
+    - treelite >=4.1.2,<5
 
 test:
   requires:
