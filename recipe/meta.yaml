@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/dmlc/tl2cgen/archive/{{ version }}.tar.gz
   sha256: e7e29be473b9af6c6a606d537b2f7349767a465eaa86d5ee511b5b540b54322a
+  patches:
+    - 0001-Use-latest-mdspan-commit.patch
 
 build:
   number: 0
