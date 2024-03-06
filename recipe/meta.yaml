@@ -29,13 +29,13 @@ requirements:
     - python
     - pip >=22.1
     - hatchling >=1.12.1
-    - treelite >=3.4,<4
+    - treelite >=4.1.2,<5
   run:
     - python
     - numpy
     - scipy
     - packaging
-    - treelite >=3.4,<4
+    - treelite >=4.1.2,<5
 
 test:
   requires:
