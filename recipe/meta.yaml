@@ -24,9 +24,11 @@ requirements:
     - rapidjson
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ stdlib('c') }}
+    - llvm-openmp  # [osx]
+    - libgomp  # [linux]
   host:
     - python
     - pip >=22.1
