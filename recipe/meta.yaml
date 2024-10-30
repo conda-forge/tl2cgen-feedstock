@@ -26,6 +26,7 @@ requirements:
     - libgomp  # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ stdlib('c') }}
   host:
     - python
     - pip >=22.1
