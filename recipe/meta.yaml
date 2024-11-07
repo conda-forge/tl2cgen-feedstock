@@ -24,6 +24,7 @@ requirements:
     - rapidjson
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
@@ -31,6 +32,8 @@ requirements:
     - pip >=22.1
     - hatchling >=1.12.1
     - treelite >=4.1.2,<5
+    - llvm-openmp  # [osx]
+    - libgomp  # [linux]
   run:
     - python
     - numpy
